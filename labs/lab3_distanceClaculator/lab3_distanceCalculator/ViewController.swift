@@ -19,7 +19,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        textField.keyboardType = UIKeyboardType.NumberPad
         // Do any additional setup after loading the view, typically from a nib.
     }
     
