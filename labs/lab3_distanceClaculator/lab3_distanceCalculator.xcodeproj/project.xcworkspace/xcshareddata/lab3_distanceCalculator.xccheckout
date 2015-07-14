@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0258C81F-6EC0-4673-BC03-8A9D2DFA24AF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>lab3_distanceCalculator</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8F42465530217991530190823F69E2DCA5017D74</key>
+		<string>https://github.com/joelnewcom/summerSchoolGroup9.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>labs/lab3_distanceClaculator/lab3_distanceCalculator.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8F42465530217991530190823F69E2DCA5017D74</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/joelnewcom/summerSchoolGroup9.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8F42465530217991530190823F69E2DCA5017D74</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8F42465530217991530190823F69E2DCA5017D74</string>
+			<key>IDESourceControlWCCName</key>
+			<string>summerSchoolGroup9</string>
+		</dict>
+	</array>
+</dict>
+</plist>
