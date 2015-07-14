@@ -15,8 +15,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var clearButton: UIButton!
     @IBOutlet weak var resultsField: UILabel!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        textField.keyboardType = UIKeyboardType.NumberPad
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -24,6 +27,8 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
     
     
     func convertToDouble(numberAsString:String)->Double{
@@ -39,6 +44,7 @@ class ViewController: UIViewController {
         
         var resultString:String
         var doubleVal:Double = convertToDouble(self.textField.text)
+        self.textField.resignFirstResponder()
         
         //converting into kilometers
         doubleVal = doubleVal * 1.609344
@@ -48,7 +54,7 @@ class ViewController: UIViewController {
         
     }
     @IBAction func clearResultAndTextfield(sender: UIButton) {
-        
+        self.textField.resignFirstResponder()
         textField.text = ""
         resultsField.text = ""
     }
