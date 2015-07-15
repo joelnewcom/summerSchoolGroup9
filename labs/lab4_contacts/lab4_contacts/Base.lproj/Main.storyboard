@@ -39,7 +39,7 @@
                                             <rect key="frame" x="15" y="0.0" width="270" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                     </subviews>
@@ -73,9 +73,45 @@
                     <view key="view" contentMode="scaleToFill" id="MMQ-IT-qOo">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2N-mo-GtS">
+                                <rect key="frame" x="279" y="223" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnJ-DZ-mvp">
+                                <rect key="frame" x="279" y="268" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vpd-6u-ikb">
+                                <rect key="frame" x="279" y="180" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="L2N-mo-GtS" firstAttribute="top" secondItem="Vpd-6u-ikb" secondAttribute="bottom" constant="22" id="4CZ-0X-8PM"/>
+                            <constraint firstAttribute="centerX" secondItem="pnJ-DZ-mvp" secondAttribute="centerX" id="Qwg-eX-xUo"/>
+                            <constraint firstItem="Vpd-6u-ikb" firstAttribute="leading" secondItem="L2N-mo-GtS" secondAttribute="leading" id="VM0-9Z-JBb"/>
+                            <constraint firstItem="Vpd-6u-ikb" firstAttribute="centerX" secondItem="MMQ-IT-qOo" secondAttribute="centerX" id="bFI-3e-i0k"/>
+                            <constraint firstAttribute="centerX" secondItem="L2N-mo-GtS" secondAttribute="centerX" id="cIe-Ol-a01"/>
+                            <constraint firstItem="Vpd-6u-ikb" firstAttribute="top" secondItem="cIm-e0-J51" secondAttribute="bottom" constant="116" id="fTR-SI-66x"/>
+                            <constraint firstAttribute="centerX" secondItem="Vpd-6u-ikb" secondAttribute="centerX" id="s8G-tD-uFY"/>
+                            <constraint firstItem="Vpd-6u-ikb" firstAttribute="leading" secondItem="pnJ-DZ-mvp" secondAttribute="leading" id="u8b-5H-9al"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Detail" id="7CI-Tc-4Bn"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="AddressLabel" destination="L2N-mo-GtS" id="e0K-ha-r3Q"/>
+                        <outlet property="NameLabel" destination="Vpd-6u-ikb" id="YgA-br-G3k"/>
+                        <outlet property="PhoneLabel" destination="pnJ-DZ-mvp" id="Gpd-Ay-9AV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrm-kH-fPn" sceneMemberID="firstResponder"/>
             </objects>

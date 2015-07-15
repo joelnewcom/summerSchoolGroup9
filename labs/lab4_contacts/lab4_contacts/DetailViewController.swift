@@ -11,6 +11,9 @@ import UIKit
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
+    @IBOutlet weak var NameLabel: UILabel!
+    @IBOutlet weak var AddressLabel: UILabel!
+    @IBOutlet weak var PhoneLabel: UILabel!
 
 
     var detailItem: AnyObject? {
@@ -23,8 +26,16 @@ class DetailViewController: UIViewController {
     func configureView() {
         // Update the user interface for the detail item.
         if let detail: AnyObject = self.detailItem {
-            if let label = self.detailDescriptionLabel {
-                label.text = detail[0] as! String
+            
+            //NameLabel.text = detail[0] as? String
+            if let label = self.NameLabel {
+                label.text = detail[0] as? String
+            }
+            if let label = self.AddressLabel {
+                label.text = detail[1] as? String
+            }
+            if let label = self.PhoneLabel {
+                label.text = detail[2] as? String
             }
         }
     }

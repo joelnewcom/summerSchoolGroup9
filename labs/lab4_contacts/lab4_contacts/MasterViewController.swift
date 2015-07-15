@@ -2,7 +2,7 @@
 //  MasterViewController.swift
 //  lab4_contacts
 //
-//  Created by X Code User on 7/14/15.
+//  Created by Group9 Danny Selgo and Joel Neukom on 7/14/15.
 //  Copyright (c) 2015 gvsu.edu. All rights reserved.
 //
 
@@ -41,6 +41,7 @@ class MasterViewController: UITableViewController {
         }
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -77,7 +78,7 @@ class MasterViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
 
         let object = objects[indexPath.row] as! NSArray
-        cell.textLabel!.text = object[0] as! String
+        cell.textLabel!.text = object[0] as? String
         return cell
     }
 
