@@ -79,6 +79,7 @@ class MasterViewController: UITableViewController {
 
         let object = objects[indexPath.row] as! NSArray
         cell.textLabel!.text = object[0] as? String
+        cell.detailTextLabel!.text = object[1] as? String
         return cell
     }
 
