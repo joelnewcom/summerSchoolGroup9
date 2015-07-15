@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lab3_distanceCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miles:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrg-8y-9Di">
+                                <rect key="frame" x="16" y="37" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8BT-Ug-b7V">
+                                <rect key="frame" x="16" y="72" width="37" height="30"/>
+                                <state key="normal" title="Clear">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearResultAndTextfield:" destination="BYZ-38-t0r" eventType="touchUpInside" id="siw-uT-aRX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dq0-mL-yTn">
+                                <rect key="frame" x="16" y="128" width="568" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="qEH-FM-xPb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a number of miles" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8RD-zn-cna">
+                                <rect key="frame" x="142" y="28" width="442" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ce1-O6-h0h">
+                                <rect key="frame" x="417" y="72" width="167" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="ArG-hG-YPM"/>
+                                </constraints>
+                                <state key="normal" title="Convert to Kilometers">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="convertToKilometers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jyZ-vA-xlA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8BT-Ug-b7V" firstAttribute="top" secondItem="jrg-8y-9Di" secondAttribute="bottom" constant="14" id="4QJ-Jq-Tad"/>
+                            <constraint firstItem="jrg-8y-9Di" firstAttribute="leading" secondItem="8BT-Ug-b7V" secondAttribute="leading" id="5bi-T7-IIy"/>
+                            <constraint firstItem="Ce1-O6-h0h" firstAttribute="baseline" secondItem="8BT-Ug-b7V" secondAttribute="baseline" id="AUG-Qu-mxe"/>
+                            <constraint firstItem="8BT-Ug-b7V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Idv-6J-SiR"/>
+                            <constraint firstItem="8RD-zn-cna" firstAttribute="trailing" secondItem="Ce1-O6-h0h" secondAttribute="trailing" id="LG5-ia-bc4"/>
+                            <constraint firstItem="Dq0-mL-yTn" firstAttribute="top" secondItem="8BT-Ug-b7V" secondAttribute="bottom" constant="26" id="OMC-7b-uES"/>
+                            <constraint firstItem="8RD-zn-cna" firstAttribute="leading" secondItem="jrg-8y-9Di" secondAttribute="trailing" constant="80" id="TDS-r8-4J0"/>
+                            <constraint firstItem="8RD-zn-cna" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="jqI-CN-xJC"/>
+                            <constraint firstItem="Dq0-mL-yTn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="pkg-hw-YYz"/>
+                            <constraint firstItem="Ce1-O6-h0h" firstAttribute="trailing" secondItem="Dq0-mL-yTn" secondAttribute="trailing" id="rXp-Yk-68x"/>
+                            <constraint firstItem="8RD-zn-cna" firstAttribute="bottom" secondItem="jrg-8y-9Di" secondAttribute="bottom" id="vah-6h-cPA"/>
+                            <constraint firstItem="8BT-Ug-b7V" firstAttribute="leading" secondItem="Dq0-mL-yTn" secondAttribute="leading" id="woP-3n-1NZ"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="clearButton" destination="8BT-Ug-b7V" id="nef-SX-BAM"/>
+                        <outlet property="convertButton" destination="Ce1-O6-h0h" id="NR9-ul-MXI"/>
+                        <outlet property="resultsField" destination="Dq0-mL-yTn" id="Zvg-G7-6Vv"/>
+                        <outlet property="textField" destination="8RD-zn-cna" id="IQ4-5O-tax"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
