@@ -177,6 +177,7 @@
 		9E24F99C1B152B9100A0B48C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Jonathan Engelsma";
 				TargetAttributes = {
@@ -440,6 +441,7 @@
 				9E24F9C71B152B9200A0B48C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E24F9C81B152B9200A0B48C /* Build configuration list for PBXNativeTarget "TopTracksDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +450,7 @@
 				9E24F9CA1B152B9200A0B48C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
