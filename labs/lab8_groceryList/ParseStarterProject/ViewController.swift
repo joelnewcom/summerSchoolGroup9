@@ -11,7 +11,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let testObj = PFObject(className: "WyWidgets")
+        testObj["name"]="some fancy Widget"
+        testObj["description"]="some fancy Widget"
+        
+        testObj.saveInBackgroundWithBlock{(success:Bool, error:NSError?) in
+            println("data has been saed")
+        }
     }
 
     override func didReceiveMemoryWarning() {
