@@ -12,12 +12,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let testObj = PFObject(className: "WyWidgets")
-        testObj["name"]="some fancy Widget"
-        testObj["description"]="some fancy Widget"
-        
-        testObj.saveInBackgroundWithBlock{(success:Bool, error:NSError?) in
-            println("data has been saed")
+        let testObject = PFObject(className: "TestObject")
+        testObject["foo"] = "bar"
+        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+            println("Object has been saved.")
         }
     }
 
