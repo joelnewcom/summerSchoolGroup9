@@ -1,0 +1,11 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+
+target 'lab9_googleMaps' do
+pod 'GoogleMaps'
+end
+
+target 'lab9_googleMapsTests' do
+
+end
+

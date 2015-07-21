@@ -70,7 +70,6 @@
         <!--Detail-->
         <scene sceneID="Cn3-H9-jdl">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lrm-kH-fPn" sceneMemberID="firstResponder"/>
                 <viewController title="Detail" id="Ah7-4n-0Wa" customClass="DetailViewController" customModule="lab08" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eG5-ex-Uih"/>
@@ -113,6 +112,7 @@
                         <outlet property="saveButton" destination="F9P-Mo-z1E" id="G3T-8m-Epe"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lrm-kH-fPn" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1343" y="64"/>
         </scene>
