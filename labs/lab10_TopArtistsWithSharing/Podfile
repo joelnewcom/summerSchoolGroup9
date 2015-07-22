@@ -1,0 +1,11 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '8.0'
+
+target 'TopTracksDemo' do
+	pod "TUSafariActivity"
+end
+
+target 'TopTracksDemoTests' do
+
+end
+

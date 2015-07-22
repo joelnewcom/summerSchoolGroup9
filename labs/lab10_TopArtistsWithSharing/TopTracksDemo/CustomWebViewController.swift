@@ -12,18 +12,19 @@ class CustomWebViewController: UIViewController, UIWebViewDelegate {
 
     @IBOutlet weak var webView: UIWebView!
     
-    var webUrl : String?
+    var webUrl : String = "www.google.com"
     var _webActivityIndicator : UIActivityIndicatorView?
         
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let activity : UIBarButtonItem = UIBarButtonItem(customView: self.webActivityIndicator())
+        
         let safari : UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Action, target: self, action: "viewInSafari")
         
         self.navigationItem.rightBarButtonItems = [safari,activity]
         
-        let theUrl : NSURL? = NSURL(string: self.webUrl!)
+        let theUrl : NSURL? = NSURL(string: self.webUrl)
         
         let request : NSMutableURLRequest? = NSMutableURLRequest(URL: theUrl!, cachePolicy: NSURLRequestCachePolicy.UseProtocolCachePolicy, timeoutInterval: 10)
         
@@ -52,6 +53,8 @@ class CustomWebViewController: UIViewController, UIWebViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
     func webActivityIndicator() -> UIActivityIndicatorView
     {
         if self._webActivityIndicator == nil {
@@ -62,10 +65,13 @@ class CustomWebViewController: UIViewController, UIWebViewDelegate {
     }
     
     func viewInSafari() {
-        let url : NSURL? = NSURL(string: self.webUrl!)
-        if !UIApplication.sharedApplication().openURL(url!) {
-            println("Failed to open " + self.webUrl!)
-        }
+        //new activityController
+        let URL:NSURL = NSURL(string: self.webUrl)!
+        let activityTU = TUSafariActivity()
+
+        let activityViewController = UIActivityViewController(activityItems: [URL], applicationActivities: [activityTU])
+        
+        presentViewController(activityViewController, animated: true, completion: nil)
     }
     
     func backPressed() {

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import MapKit
 import GoogleMaps
 
 
@@ -18,14 +17,17 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     override func viewDidLoad() {
         super.viewDidLoad()
         self.locationManager.delegate = self
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
-        self.locationManager.distanceFilter = 500
+        //self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+        //self.locationManager.distanceFilter = 500
         self.locationManager.requestWhenInUseAuthorization()
         
         var camera = GMSCameraPosition.cameraWithLatitude(43.774667, longitude: -114.185137, zoom: 4)
         var mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
-        mapView.delegate = self
+        mapView.settings.compassButton = true
         self.view = mapView
+        mapView.delegate = self
+        
+        
         readData()
     }
     
@@ -98,9 +100,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         if running {
             if (CLAuthorizationStatus.AuthorizedWhenInUse == status) {
                 locationManager.startUpdatingLocation()
+                mapView.myLocationEnabled = true
+                mapView.settings.myLocationButton = true
             }
         } else {
             locationManager.stopUpdatingLocation()
+            mapView.settings.myLocationButton = false
+            mapView.myLocationEnabled = false
         }
         
     }

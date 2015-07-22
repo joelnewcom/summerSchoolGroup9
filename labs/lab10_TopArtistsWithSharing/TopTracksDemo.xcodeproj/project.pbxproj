@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9E24F9AA1B152B9200A0B48C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E24F9A91B152B9200A0B48C /* AppDelegate.swift */; };
 		9E24F9AC1B152B9200A0B48C /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E24F9AB1B152B9200A0B48C /* MasterViewController.swift */; };
-		9E24F9AE1B152B9200A0B48C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E24F9AD1B152B9200A0B48C /* DetailViewController.swift */; };
 		9E24F9B11B152B9200A0B48C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E24F9AF1B152B9200A0B48C /* Main.storyboard */; };
 		9E24F9B31B152B9200A0B48C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E24F9B21B152B9200A0B48C /* Images.xcassets */; };
 		9E24F9B61B152B9200A0B48C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E24F9B41B152B9200A0B48C /* LaunchScreen.xib */; };
@@ -18,6 +17,7 @@
 		9E24F9DA1B1533C900A0B48C /* Last_fm_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E24F9D61B1533C800A0B48C /* Last_fm_logo.png */; };
 		9E24F9DB1B1533C900A0B48C /* UIImageView+Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E24F9D81B1533C900A0B48C /* UIImageView+Network.m */; };
 		9E24F9DD1B15429F00A0B48C /* CustomWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E24F9DC1B15429F00A0B48C /* CustomWebViewController.swift */; };
+		C4FFFF59595260CA6A15C0C8 /* libPods-TopTracksDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A818EB49C86E7E884491CA /* libPods-TopTracksDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,11 +31,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C439C9291E19B4D86DB52D2 /* Pods-TopTracksDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopTracksDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TopTracksDemo/Pods-TopTracksDemo.release.xcconfig"; sourceTree = "<group>"; };
+		83A818EB49C86E7E884491CA /* libPods-TopTracksDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TopTracksDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97FCD088C94EA09C44E92130 /* Pods-TopTracksDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopTracksDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TopTracksDemo/Pods-TopTracksDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		9E24F9A41B152B9200A0B48C /* TopTracksDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopTracksDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E24F9A81B152B9200A0B48C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E24F9A91B152B9200A0B48C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E24F9AB1B152B9200A0B48C /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		9E24F9AD1B152B9200A0B48C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9E24F9B01B152B9200A0B48C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E24F9B21B152B9200A0B48C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9E24F9B51B152B9200A0B48C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4FFFF59595260CA6A15C0C8 /* libPods-TopTracksDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,12 +72,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1EDD499EB42E947C2E96E71E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83A818EB49C86E7E884491CA /* libPods-TopTracksDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9E24F99B1B152B9100A0B48C = {
 			isa = PBXGroup;
 			children = (
 				9E24F9A61B152B9200A0B48C /* TopTracksDemo */,
 				9E24F9BE1B152B9200A0B48C /* TopTracksDemoTests */,
 				9E24F9A51B152B9200A0B48C /* Products */,
+				C52CFD8C2737EFC4F69BCC8D /* Pods */,
+				1EDD499EB42E947C2E96E71E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +111,6 @@
 				9E24F9D81B1533C900A0B48C /* UIImageView+Network.m */,
 				9E24F9A91B152B9200A0B48C /* AppDelegate.swift */,
 				9E24F9AB1B152B9200A0B48C /* MasterViewController.swift */,
-				9E24F9AD1B152B9200A0B48C /* DetailViewController.swift */,
 				9E24F9AF1B152B9200A0B48C /* Main.storyboard */,
 				9E24F9B21B152B9200A0B48C /* Images.xcassets */,
 				9E24F9B41B152B9200A0B48C /* LaunchScreen.xib */,
@@ -133,6 +145,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C52CFD8C2737EFC4F69BCC8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97FCD088C94EA09C44E92130 /* Pods-TopTracksDemo.debug.xcconfig */,
+				7C439C9291E19B4D86DB52D2 /* Pods-TopTracksDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,9 +161,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E24F9C51B152B9200A0B48C /* Build configuration list for PBXNativeTarget "TopTracksDemo" */;
 			buildPhases = (
+				B75B587030FD8743A9B46D7A /* Check Pods Manifest.lock */,
 				9E24F9A01B152B9200A0B48C /* Sources */,
 				9E24F9A11B152B9200A0B48C /* Frameworks */,
 				9E24F9A21B152B9200A0B48C /* Resources */,
+				358DE775574C76F26A848E73 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,12 +253,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		358DE775574C76F26A848E73 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TopTracksDemo/Pods-TopTracksDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B75B587030FD8743A9B46D7A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9E24F9A01B152B9200A0B48C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E24F9AE1B152B9200A0B48C /* DetailViewController.swift in Sources */,
 				9E24F9AC1B152B9200A0B48C /* MasterViewController.swift in Sources */,
 				9E24F9DD1B15429F00A0B48C /* CustomWebViewController.swift in Sources */,
 				9E24F9D91B1533C900A0B48C /* FTWCache.m in Sources */,
@@ -365,6 +420,7 @@
 		};
 		9E24F9C61B152B9200A0B48C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97FCD088C94EA09C44E92130 /* Pods-TopTracksDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -378,6 +434,7 @@
 		};
 		9E24F9C71B152B9200A0B48C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C439C9291E19B4D86DB52D2 /* Pods-TopTracksDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

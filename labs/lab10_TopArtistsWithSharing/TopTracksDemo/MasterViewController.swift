@@ -68,7 +68,7 @@ class MasterViewController: UITableViewController {
                 var mobileUrl = artist?.objectForKey("url") as? String
                 mobileUrl = mobileUrl?.stringByReplacingOccurrencesOfString("www.last.fm", withString: "m.last.fm")
 
-                (segue.destinationViewController as? CustomWebViewController)?.webUrl = mobileUrl
+                (segue.destinationViewController as? CustomWebViewController)?.webUrl = mobileUrl!
                 (segue.destinationViewController as? CustomWebViewController)?.title = "Artist"
             }
         }
